@@ -1,0 +1,980 @@
+1) Company + Idea Framing
+We are building a company that solves invisible groundwater poisoning for 200 million people across 70 countries by predicting which wells are toxic before anyone drinks from them, using a two-phase system: satellite remote sensing that is 86% accurate at zero cost, followed by a $1.50 onsite dip test that pushes accuracy to 98.07%.
+
+2) Problem + Bottleneck
+What is the specific, tightly scoped problem you are solving right now?
+What is the one biggest constraint, bottleneck, or failure point you are focused on solving first?
+Governments cannot afford to test every well—Bangladesh alone has 10 million tube wells, and lab testing at $50–$200 per sample would cost up to $2 billion—so most families drink poison for years undetected. The biggest bottleneck right now is manufacturing our onsite dip test strips to prove they reliably hit 98.07% accuracy in hot, humid field conditions.
+
+3) Why This Is 10x Better
+Why is your solution 10x better than the current way this problem is solved?
+Traditional screening costs $200 per well and misses 80% of dangerous sites because budgets run out; our Phase 1 satellite scan costs $0, immediately identifies 86% of contaminated wells across an entire country, and our Phase 2 dip test confirms the exact risk at 98.07% accuracy for only $1.50 per flagged well. We cut costs by 200x and time from a few months to a mere hours
+
+4) How It Works (Step-by-Step)
+
+Our system runs in two phases. In Phase 1 (Remote Sensing), we measure 41 parameters from free satellite imagery and public geology maps—things like soil types, slopes, rock formations, and magnetic signatures—without anyone visiting the site. Our computer compares these against 56,952 documented groundwater sites to paint a country-wide risk map; this phase alone is 86% accurate and runs in 10 milliseconds per well. In Phase 2 (Onsite Dip Test), local health workers visit only the 15–20% of wells flagged as high-risk and dip a paper strip that changes color if arsenic, iron, manganese, or acidity is present. A smartphone app reads the colour instantly, pushing the final accuracy to 98.07%. That result feeds back into the map so the system grows smarter every time. From these 46 total inputs, we calculate 73 parameters and identify over 50 substances, resources, and hidden risks, ranging from arsenic and fluoride to illegal mining and lithium deposits.
+
+5) Core Technology + Alternatives
+We use satellite data and artificial intelligence to read the land's "fingerprints," plus paper strips that change colour like a pregnancy test. Other teams use expensive lab trucks or simple guessing; satellites let us see the whole country at once without driving there.
+
+6) Prototype Progress
+We have built and validated both phases across two completely different environments—the United States at 5.7% contamination and Bangladesh at 41.9% contamination. Phase 1 remote sensing is already achieving 86% accuracy using only zero-cost satellite data. When Phase 2 dip test validation is added, the combined system reaches 98.07% accuracy.
+
+7) Biggest Technical Gap
+The gap is the 12.07 percentage point jump between Phase 1 remote sensing at 86% and the full 98.07% certainty needed for public health decisions. We close this by deploying the Phase 2 dip test as the surgical confirmation layer, then feeding every confirmed result back into the satellite model so the 86% baseline climbs higher as more villages are tested.
+
+8) Validation + Learnings
+We have spoken to hydrogeologists from BGS, and a professor from Imperial College London, who confirmed that old map models fail because a safe well and a toxic well can sit just 100 meters apart, and to Bangladesh health officials, who said universal testing is financially impossible. They are most sceptical that a paper strip can match lab-grade 98.07% accuracy, so we are running 10,000 side-by-side tests against certified lab results to prove the number before any government contract is signed.
+
+9) Economic Viability
+Governments and NGOs pay because they currently waste millions testing safe wells; our system lets them spend that money on filters and clean wells instead. We charge per well screened or sell subscriptions to national water agencies.
+
+10) Why Now
+This did not exist before because satellites were not detailed enough, and computers were too weak to spot hidden groundwater patterns across 50,000+ data points. Now we have high-resolution elevation maps and machine learning that can read geology like a medical scan.
+
+11) Phase Completion + Risk
+?????????????????????????
+
+12) Ownership + Execution Plan
+???????????????????????????
+
+13) Next 48 Hours
+What is the single most important thing you are doing in the next 48 hours to move this forward?@Taha.U [1:37]: Dude, I love slacks a no take it's so good. It doesn't sound like an AI, right?
+
+@Dhruvin [1:44]: No. What? Yeah, so Basically Water testing is super expensive. It is like $200 for water sample. All right. And you could do this every 1 or 2 years.
+
+@Dhruvin [2:03]: So if we take Bangladesh for example It has 10 million vote aquafiers and bore wells. So if you do the math, it is $2 billion. In water testing alone Every 2 to 3 years, or every 1 to 3 years.
+
+@Dhruvin [2:20]: So super expensive. So that is why Many municipalities neglect their water testing part and so that it's like you would see that. Because water testing is not done appropriately, like the data.
+
+@Dhruvin [2:38]: Currently we have for Bangladesh is like 40 years old, like they did extensive water testing like 40 years ago. So that that is a big problem for the people who are using that groundwater. Because groundwater is not pure, it does, like many bacteria, it has many heavy metals, which is like not safe for consumption. So how do we know that this water is safe to drink or not. So
+
+@Dhruvin [3:03]: So this is a two-tier framework on how we test water. First step
+
+@Taha.U [3:10]: OK
+
+@Dhruvin [3:11]: We're going to test water through satellite and geography. So we are going to use satellite imagery, and topological map to actually create a 3D space of the whole. Area that we need to Do the water testing on. So let's take Bangladesh. So we are going to extract 30 m resolution of 30 m resolution topological map of Bangladesh, and then we are going to
+
+@Dhruvin [3:41]: Identify many Parameters such as what, what is the level of iron, pH and temperature through satellites. We can do that. Sounds crazy. We can do that. So once we do that
+
+@Taha.U [3:55]: Yeah
+
+@Dhruvin [3:56]: We are going to run our first AI model, which has like 82% accuracy and it is going to tell us About about 56. Different Heavy metals and chemicals which are present and their concentration.
+
+@Dhruvin [4:15]: All right, with 82% accuracy. Once we do that, we will see some red marks. So like for example, there is a boreen which has like crazy amount of arsenic, and we need to make sure that this model is not bluffing or anything, so we are going to send a health worker. He's going to take a paper strip, dip it into the water, wait for 30 seconds.
+
+@Dhruvin [4:38]: And then the paper strip is going to change its color, so it is very calibrated paper strip, so it is, so we will be using syn synthetic biology for that. These paper strips already exist. We do not need to invent anything new for this part. So we are going to take these paper strips. They have this paper strip, paper strip are like going to test for 7 new chemicals.
+
+@Dhruvin [5:01]: Once we get the data for that, we are going to again feed it to the ML model, and then you are going to get 40 more. Substances and chemicals for that we can test for. So basically, the cost went from $200 to $1.50.
+
+@Taha.U [5:21]: Did, is that it?
+
+@Dhruvin [5:21]: It is Yeah, but you know, now the, the, the best part about this project
+
+@Taha.U [5:26]: I have OK. Go ahead.
+
+@Dhruvin [5:30]: Is that This is not limited to the public health. We have such massive amounts of data. You know who this data can use, who, which what kind of people the the can use this massive data does it. Governments, because governments can track illegal.
+
+@Taha.U [5:48]: Pri companies, yeah
+
+@Dhruvin [5:50]: Illegal way of illegal waste dumpings, illegal mining, illegal logging, and then A very unexpected use is in investment banking and quantitative finance. For example, Renaissance I was watching a YouTube video.
+
+@Taha.U [6:06]: Yeah
+
+@Dhruvin [6:07]: Where, where they track temperatures in Europe to identify that how much oil and gas is going to be used. So imagine What they can do with this data, with this data, they can find out how much mining is a company doing? How much effective mining are they doing? How much pollution they have no spread. So
+
+@Taha.U [6:28]: Dude.
+
+@Dhruvin [6:30]: It's
+
+@Taha.U [6:31]: Dude, the obligations are slipping endless to this.
+
+@Dhruvin [6:31]: What Hm
+
+@Taha.U [6:35]: Look at what talenttiers. It is literally an ML prediction service.
+
+@Dhruvin [6:35]: Yeah, yeah, yeah, on this.
+
+@Taha.U [6:40]: And we are, we with this could identify where which is got governments or whatever. Are hiding like nuclear waste, because one thing we know, right, with nuclear waste, right? Most of the people use water as an outage, and inside the wait is this true? I don't know, I'm just going to get it through you. I'm pretty sure I heard this from somewhere when you put like nuclear waste into water. It's fast, it's pretty traceable from which path did it come and it was coming from.
+
+@Dhruvin [6:51]: Yeah
+
+@Dhruvin [7:12]: Yeah, yeah, we can do that. But now the problem is we have to pick a single direction. We have the solution. Now it's like we have to, we have to. Spin on the problem. Are we going to make this moonshot into public health, or are we going to make it a software like Valentier or are we going to pitch it to
+
+@Dhruvin [7:34]: Investors from finance industries. So for that I think we have to talk to Annie, so like in which direction do we take this project to?
+
+@Taha.U [7:45]: Interesting Indeed, interesting news. This is one of my
+
+@Dhruvin [7:49]: Are you have a.
+
+@Taha.U [7:50]: Problem statement is so flipping good.
+
+@Dhruvin [7:54]: Yeah, and it's like we already have the MVP made. It's like, so that I, I said, there are two ML models. First one has 82%, the second one has 9298.07%. It is like better than lab. In most cases, if you, if your country does not have super advanced labs, then, yeah, this 98.7% is better than wetlab,
+
+@Dhruvin [8:17]: Calculations. So yeah. It is, we have like reduced cost from $200 to $1.50. It is like 180 X. The moonshot asks for 10x. We are doing 180 X. Also, the applications of this data set is like crazy crazy good. So I think there will be no problem for us to earn money out of this dataset because like data is gold.
+
+@Dhruvin [8:45]: Today, God knows what kind of people are going to do what with this data set, but yeah, we can con butt load of money off, off of this. But if the problem is like we have to pick a single direction in moonshot. So what do we do?
+
+@Dhruvin [9:02]: And based on that direction we are going to outreach to people. So for example, example like Ali suggests That pick the direction of Investment banking and quantitative finance, then we are going to interview people and have coffee chats with people who aren't in the sea, so we can have their
+
+@Dhruvin [9:22]: Opinions on that project. So yeah, so let's talk with Annie on which direction do we take this project into. And then this whole week because we can spend like building the website manifesto video and blah blah blah.
+
+@Taha.U [9:32]: Interesting OK, one quick question. First of all, I didn't get the bit that you said we can, what is it called? I'm forgetting, forgetting it but there's one of the students she made that super confused me. you know how, oh my God, well, give me a second.
+
+@Dhruvin [9:43]: Mhm.
+
+@Taha.U [9:59]: OK OK, back to the point. You know, when, you said that we can use what is it called? Like ML for this and we get like an 87% accuracy. I'm confused, where are you getting that data from first of all. Second of all, like, where are you making a prediction that 87%, super confusing. I don't know what are you basing it off of? And I'd say, which was another question, which was the feed that you had already asked about this, like interviewed the professors on this issue.
+
+@Dhruvin [10:13]: Hm. Mhm Yeah. Yeah
+
+@Dhruvin [10:38]: Yeah, yeah, so, it, so first, your first question, I took historical data data from USGS, which is the United States Geological Survey. So they have like from 19 42 I guess they have been mapping, a, a like 14 chemicals, different chemicals, every single year and for like how many, I think there are like 50 states, I guess, and each 50 state has like I guess 14 to 18 different labs, so it's like a buttload of data I got from there that then 2 for Bangladesh, I did. It was from British Geological Survey in 1990, so that was another source of data.
+
+@Taha.U [11:23]: P
+
+@Dhruvin [11:23]: And then I trained the ML model on this, and for which professors I interviewed, I did not like talk to them.
+
+@Taha.U [11:28]: Great
+
+@Dhruvin [11:33]: Like on on video. It was through email conversations where I ask them about it.
+
+@Taha.U [11:38]: Did you validate it with them?
+
+@Dhruvin [11:40]: Yeah, yeah, yeah, one, only one, but only one. Only one. It is like it was the validation was in technical part. I think we for this moonshot, we need validation in the economics of this project and the feasibility of this project. So I think we will need to do more validation work.
+
+@Taha.U [11:57]: Yeah
+
+@Dhruvin [12:00]: But
+
+@Taha.U [12:00]: Let's talk to Ali about this later today, but one of the issues I see with this
+
+@Dhruvin [12:03]: Yeah, yeah Yes.
+
+@Taha.U [12:05]: Is, what is it called? Dude, I do not think that we can go. This is, we're starting a company basically. We need, this is a company Moonshot is a company here. I don't know how the hell we're gonna get funding. Like we need to sell this property, and I don't think it's well we should only rely on. Why limit ourselves to flipping ML.
+
+@Dhruvin [12:16]: Mhm Yeah.
+
+@Taha.U [12:29]: And remember the Yel challenge, how annoying it was to track cattle.
+
+@Dhruvin [12:30]: Bye
+
+@Taha.U [12:33]: And something as unexpected as urania. In water That is much hard charge first.
+
+@Dhruvin [12:38]: But But the thing is We are getting 98.7% accuracy at cost of like 20 cents. Wet labs do not compare to this, and also keep in mind that we have to.
+
+@Dhruvin [12:55]: You know, build a solution, build the like like this should be something which is achievable into the next 5 to 8 years, or, or, so firstly, we, so the problem right now. This is like only the MVP. The problem right now is that not all countries have
+
+@Dhruvin [13:17]: Lot of documented data online. For example, India, I wanted to do this for India first. But the problem is India does not have all of this data somewhere in a data set which I could publicly access for free. So that is the, that is one of the reasons that this was not built before, but it is now possible.
+
+@Dhruvin [13:38]: Also, as I said, that yeah, also, as I said that the first tier, the tier one model, which only uses satellite data and remote sensing. It has the accuracy of 82%, and the second model has the accuracy of 98.07%.
+
+@Taha.U [13:40]: Why not Yeah?
+
+@Dhruvin [13:55]: So the second model actually uses data from that paper strips, so that is In on field testing, but the first modern has accuracy of 82%, which is not good enough. I checked multiple times that government require above 91% accuracy in such cases, where it soundsificness so.
+
+@Taha.U [14:14]: Yeah It's just one of the problems you're listed in inside of it. one of the problems was that government should governments, what if a government says no to your solution, then
+
+@Dhruvin [14:19]: Yeah so But why would they? I mean, like, yeah, I mean, right now they would say no because the accuracy is not high enough for the diamond.
+
+@Taha.U [14:32]: The case they have other They have other incentives, dude. why do you think, what is it called? When the US said they're having restructured Iran. Iran said no. The main reason was because they had their own agenda that they had to see, and they can't just let their people not accept that agenda.
+
+@Dhruvin [14:53]: But then there is also like we save a buttload of money for like for them. Governments like for example, these are not government labs which are testing for The water. I mean, yeah, there are many government laws, for example, in the case of USGS, but not in countries like Bangladesh, Soman and.
+
+@Dhruvin [15:14]: Somalia, Sudan and Somalia, these do not have government labs to do the water testing so they, you know, for like fun like give money to other private labs to do the work for them, so I mean we are saving them 180 times, of course.
+
+@Taha.U [15:20]: You're just been
+
+@Dhruvin [15:37]: Which I think that government would be
+
+@Taha.U [15:38]: Yeah, but again At what cost, literally, I'd watch cost, where exaggerating what accuracy we have, because it's not the IPC is not validated in no way in Emel.
+
+@Dhruvin [15:51]: Yes
+
+@Taha.U [15:53]: And literally dude, if we just stick to one data source that is historic data. There, we cannot get to the thing that you said after 3 centimeters to see where the thing where we've got. Where trans thingy, what is it called?
+
+@Dhruvin [16:08]: It is I did get to ask. No, like, listen, now my thing works is that first of all.
+
+@Taha.U [16:13]: I don't
+
+@Dhruvin [16:17]: The there is, there are two types of a like In very simple terms. First, there is a, there's a type of AI which learns the causation, like what is causing what? That is something's very difficult to do. It is like something that deep mind is working on to train their LLMs. LLMs do not learn what is causing what. They just didn't predict what is going to come, so.
+
+@Taha.U [16:42]: Yeah.
+
+@Dhruvin [16:45]: For every single AI model that you have, you have come across so far in your life is an AI model which has learned.
+
+@Taha.U [16:50]: I know there are predictions.
+
+@Dhruvin [16:52]: Yeah, yeah. So, so how is this so then, so how do we know that this AI model is like not dog shit, it is like not going to, you know,
+
+@Taha.U [17:02]: Because they're not using the breed because we're not using LLMs. And we're not predicting the next flipping token. Machine learning is a big sub is a
+
+@Dhruvin [17:06]: No, no, no, no, no, no, no, listen, listen. There's something gonna standardization.
+
+@Taha.U [17:13]: Yeah, OK. Walk me through.
+
+@Dhruvin [17:14]: So listen, generalization is there, so that that is like the holy grail of artificial intelligence that your one AI model which is trained on one data set, can perform as good as the data set it was trained on, on another data set which was which it was not trained on. So my AI model generalization in the paper, if you go and like read it, I use the same architecture, same
+
+@Taha.U [17:36]: Say that again Yeah
+
+@Dhruvin [17:44]: Framework in the United States and the Bangladesh, it proved generalization, that is something that we were after, and it proved that. So that means that this AI model is good enough. It has like achieved the gold standard that it can perform good in other datasets too, and
+
+@Dhruvin [18:04]: Second thing, historical data is important because Overnight nothing changes. For example, Arsenic contamination does not go from 5% to 60% in a year or two, it takes
+
+@Dhruvin [18:23]: Magnitude
+
+@Taha.U [18:23]: That could
+
+@Dhruvin [18:25]: Of changes in the geology for contamination of a substance to change.
+
+@Taha.U [18:26]: Yeah
+
+@Dhruvin [18:32]: Such massively and it does not happen. It is like not even so late that it is impossible. We, we do not consider that. So and as I was talking, I, I have verified the technical staff with. The hydrologist from BGG British Geological Society.
+
+@Dhruvin [18:51]: So I'm sure that my tech tack is like not dog shit. Like I'm not I'm sure that I'm not exactly.
+
+@Taha.U [18:56]: Good. I'm not saying my, yeah, I'm not saying that it's dog shit. Who knows? I might be flipping wrong because most of the time I am. I'm just throwing this out in the wild that I don't think relying on one source should be more than enough, especially because I've done a lot of data sourcing work in data sets work. So, and especially like when you make or you're finding you're in the process of fine tuning or making your own LLM. The one thing you see, right, is you shouldn't limit any force but one data center. And if you're doing machine learning specifically
+
+@Taha.U [19:26]: Or training a model on previous things and making them like test something and predict. We can't say, 00, we can't literally generalize and give it just one data set and call it today, and that's just historic database. We need to make an evaluating loop or something that uses different multiple sources to gain more accuracy and making people trust this war because if we're just going off of historic data. What if history doesn't tell us everything, because I can guarantee you for a short history does not tell us everything.
+
+@Dhruvin [19:52]: Yeah, it It's just. I'm saying this is just an MVP. It is just to prove that this AI architecture and that our technology works for obviously for different regions of the world, we are going to create different models for like we are going to train the models on the data set of that region. If you, if you take the model that I trained for the United States and let's try to implement it in Bangla. This shit is not going to work, even though the architecture is the same that
+
+@Taha.U [20:27]: Wait, walk me through your architecture, sorry, sorry to cut you off but walk me through your architecture.
+
+@Dhruvin [20:27]: The It is, do you, do you really want me to get into the maths, like complete maths of it because I think that for the
+
+@Taha.U [20:39]: No, not much, just, just walk there, just walk me through the architecture. What is your exact stack and it go a bit in depth for it. let's leave out the matter now because just for solely for the time constraint and just walk me through how it's working. Give it to me like a wire frame, walking through it is the wireframe.
+
+@Taha.U [21:00]: How it works and how it shirts on. Can you do that Do you know what a wireframe is?
+
+@Dhruvin [21:05]: No Right now
+
+@Taha.U [21:09]: Do you know what a wire frame is?
+
+@Dhruvin [21:11]: No
+
+@Taha.U [21:13]: OK, wireframe is basically whenever we're building software, right, we started off with a wire frame. What each function is and what that function these are. So like an MVP of an MVP. But we're not building a minimum viable product, we will be building a pipeline that's
+
+@Taha.U [21:29]: Make sure this is where a product is going to do. So, first of all, we start off with like it's in blue. You're saying he grabbed data from the US or whatever. That's the first tab inside of the pipeline. That pipeline leads into whatever model or whatever it is. It goes on and on until the output. So could you walk me through that? Let me give you an example of it. Like, you know how ChaGPG works on your phone, right? Let me give you some wire frame EFit.
+
+@Taha.U [21:57]: First of all, that the pipeline wireframe. user input on query. That leads into tokenization that goes to the nextance where the tokenization of the prompt happens, which again leads into the transformer. And then the transformers simplifies and goes through FNNN regression, and then on and on and on and on until all the lyrics are done and then its values it again to the last thing. What is it called Lalay?
+
+@Dhruvin [22:13]: Mhm
+
+@Taha.U [22:25]: After FN and it is done, they translate, they're transform is done. It gives it out, goes back, and gives it an outpre. Or if like foods are charged with work, if they're not working off of the codebase or data site, they go do to calls. That is a different thing that comes inside of it. That just adds another thing. But for the sole purpose of simplicity, input tokenizes, breaks down the prompt and makes it and let them understandable. Then the Ianum checks against its database. In the first layer, it assumes, OK? The reverse
+
+@Taha.U [22:57]: The river bank was rubbish. So first from breaking it down. What does it mean? Like a literal money bank or a riverbank, like, you know how there's a riverbank. There's two things that happened in the first SNL and then regression of forced something, something. I forgot the term for it, but that happens, so it says, oh, maybe it's a bank.
+
+@Dhruvin [23:09]: Mhm
+
+@Taha.U [23:22]: Or like a money bank that can get robbed because the term wrong was mentioned. Later on in the next day, it says, oh, no, not that because of they mentioned a term later on, like a pearl or something, that showcasing that it's the riverbank, maybe with stolen jewelry or something hidden there, or maybe it's someone's deposit or something. It does do whatever tool call you to say. I'm until the 9696 tiers or whatever layer.
+
+@Dhruvin [23:26]: Mhm
+
+@Taha.U [23:48]: All of it is done The tokens are done, the neural network is checked, the weeks have been checked. Parameters have been used inference is done. And then it just gives you an output. Oh, and, and then in the last layer, it makes an inference of, oh, I think it's this and that. And then it predicts based off of that and extra. So, the Riverbank was robbed in 2027 because of two robbers, whatever, because it used a tool call found data on its tonized raw data and said, oh yes, this is, this riverbank was a insane robbery that just happened.
+
+@Taha.U [24:22]: Do you get that, thing or should I re-simplify it?
+
+@Dhruvin [24:26]: Oh, no, I, I got, I got, I got what you're saying.
+
+@Taha.U [24:27]: Just get Thank you
+
+@Dhruvin [24:30]: So
+
+@Taha.U [24:31]: Hopefully, you understood it because I tried to simplify it like to the bare bones.
+
+@Dhruvin [24:36]: Huh, yeah, yeah, so, so first, we take the 30 centimeter SRTM data from NASA. So this is basically
+
+@Taha.U [24:37]: Yeah. Mhm
+
+@Dhruvin [24:45]: The elevation mark of the country, so let's take United States for example. We take its topological map. Which has like a 30 m resolution, then we extract the
+
+@Dhruvin [25:01]: The data set which is for the events and their water contamination and like which chemical which substance or which compound had what concentration and the exact time stamp that this was measured in, and then we switch these two data sets together so we lit the chemistry and then we stretch the geology together in a single data sets, so the, so now there is the first
+
+@Dhruvin [25:31]: Model which uses XD boost, and then basically we just feed it The data Only the geology data and the substance that we want to, you know, predict using it.
+
+@Dhruvin [25:48]: So for example, let's take arsenic, so we want to, you know, predict ethnic. On this particular ve So we do this through geology, so it, it does so with geology we also like combined remote sensing, so there are certain, certain magnetic metals that can be detected.
+
+@Dhruvin [26:08]: From satellites from low earth satellites, so we also see that and it tries to, you know, predict the relation between them. So for example, if a geo if a place has extremely high elevation and also a lot of And so salt, then obviously we solve concentration is going to be a lot, lot higher in the water water aqua fires or the boats.
+
+@Dhruvin [26:33]: Then there is the second model which is Therefore the chemistry only, so it tries to make the relation between different compounds. So for example, take asic again. When the concentration of arsenic in water is high, the iron oxide concentration is also high. This is C in the case of United States.
+
+@Taha.U [26:40]: OK OK.
+
+@Dhruvin [26:55]: So the model learns that and it, you know, so whenever we measure iron oxide in water, the Model can predict that what is going to be the concentration of arsenic, and then finally there is the hybrid model which combines model 1 and 2 into a single place. So in the very first I told you about the data set that's it geography and chemistry together. This model uses Ripsor, so to predict basically
+
+@Dhruvin [27:28]: Do like, you know, to have a much, much, you know, it is like A mixture of experts. So basically different architecture for different.
+
+@Taha.U [27:35]: MOE, OK
+
+@Dhruvin [27:37]: Different type of data and then we use like a spatial graph theory to to, you know, build a map of how the water flows. Downhill, so we know the movement of water, the speed of water, and like all other things that are related to the river and then we also do topological data analysis which uses RIPSA.
+
+@Dhruvin [28:01]: Which identifies fingerprints, so fingerprints means that what things relate to what, like what chemical, like for example, fluoride concentration.
+
+@Taha.U [28:10]: OK, so break it down. Breaks it down.
+
+@Dhruvin [28:15]: What
+
+@Taha.U [28:16]: So basically what it does is it looks for historically, whatever it was before or whatever it break, breaks it down at the patch that it was made fresh, right?
+
+@Dhruvin [28:23]: Hm No, it, it is, it is like certain things for fluoride, for example, is directly related to sulfate in water, so whenever, in case of Bangladesh, so whenever it has seen that in the last 50 years of data that whenever fluoride fluoride concentration is directly correlated to the concentration of sulfates in water. So the model learns this chemistry between them. So whenever you measure either one of them, we can find out what was the either one, which we
+
+@Taha.U [28:33]: Right
+
+@Dhruvin [28:59]: Left out. And and
+
+@Taha.U [29:01]: OK, so this is all being done without, sorry to cut you off but continue right after this. So this is all being done off of, what do you call it, satellite and chemical chemical datasets, a geological and a chem and topological enough chemical dataset.
+
+@Dhruvin [29:19]: Yeah.
+
+@Taha.U [29:20]: So the input variables that were actually making this data off of. Is Give me a second, I'm out of bed. right, topological, geological and chemical. So out of all these we got different analysis, different models.
+
+@Dhruvin [29:34]: Yeah
+
+@Taha.U [29:38]: And I was confused why are we using the MOE model into this, any, any reason why?
+
+@Dhruvin [29:42]: And we, I was just trying to explain like we use different Avile in and on in an ensemble with we merge different. I, I, I thought you were very familiar with the architecture of LLM. So I was trying to use the MOE analogy to explaining how and so works. So it is very similar in
+
+@Taha.U [29:58]: Yeah No, I like having an insul works. I got how an end song works. And I was like Marley live experts inside of this because what I was confused.
+
+@Dhruvin [30:04]: Yeah, yeah I was trying to use the analogy of it to explain it to you.
+
+@Taha.U [30:12]: Good, thank you so much for taking the time to explain to me.
+
+@Dhruvin [30:12]: It's good if you, it's. Me Yeah, so, yeah, so basically this is how the model works so,
+
+@Taha.U [30:19]: But
+
+@Dhruvin [30:23]: So like our we measure 46 parameters, 41 of them can be done through remote sensing alone. We need 5 more. The and if we, if we have very, very strong suspicion that that there's something that may be going on in that aqua fire, so we take a paper strip, we dip that paper strip into the water. Wait for 30 seconds, and we will see the exact color change, and we can then find out the concent
+
+@Taha.U [30:27]: OK. OK. Yes.
+
+@Dhruvin [30:53]: Ration s of that 5 chemicals which are I do not remember what they are. I did this long time ago, but yeah, we measure the concentrations of those fire substances and then we have all the 46 parameters, then we can find out 70+ different substances based on these 46 parameters.
+
+@Taha.U [31:06]: I So basically what we're doing is Certika she in a nutshell, what we're doing is we start off with a lot of data. That includes topological or whatever, whatever, blah, blah, blah. And then we figure it for the specific obcentration and specific chemicals that are doing this, and we link it to a geological location. And then right off of that, what we do is we run the we combine the results after the competition is done, we run into the first ha, and then we run into the second one, we combine all of these, run another analysis or under it and then
+
+@Dhruvin [31:14]: In a few seconds
+
+@Taha.U [31:43]: Get find output. Am I correct or am I wrong?
+
+@Dhruvin [31:46]: No, you're half correct. So first is the remote sense only. First, we only get the 41 parameters. We do not need to go to the field right now. First, we only get the 41 parameters. We run the first model which is geology only.
+
+@Taha.U [31:48]: OK, like.
+
+@Dhruvin [32:00]: We run the first model, we get the data back. It has accuracy of 82%. And then if something suspicious is going on, if something feels off in that aqua fire, then and then only we do the water dip test, which gives us 5 more parami, 5 more parameters, which are 5 more substances, and then we can like so so with the 41 parameters we can get like up to 56 different chemicals, and once we do 5 more substances to make it 46 parameters. We can do 70 plus. I think it is the number is somewhere
+
+@Dhruvin [32:35]: Between 73 or 74 different substances that we can measure.
+
+@Taha.U [32:40]: Dude, OK, interesting.
+
+@Dhruvin [32:41]: So this is how So, so the first stage.
+
+@Taha.U [32:44]: But, but it's just the pro OK, go ahead, go ahead.
+
+@Dhruvin [32:46]: Think one is So the first stage remote sensing one is free except the inference cost. The all of the data, the remote sensing data is like freely available on the NASA's NASA and on NASA with NASA earth data.
+
+@Taha.U [33:05]: Interesting. Continue.
+
+@Dhruvin [33:08]: Yeah, so, so that is it.
+
+@Taha.U [33:09]: Oh, can you hear me? Yeah, perfect.
+
+@Dhruvin [33:11]: Yeah, yeah.
+
+@Taha.U [33:12]: So that's a stage 2 is the only one that we do charge money for because it's a physical test. Dude, the main question, which stage two, right? Isn't the issue that we originally had that these testing kits are way too sleeping expensive. They're $200. So why are we using that and making it bigger? Is there a problem that we are, what is it called, we don't know which places to look into and maybe waste attached, or these tests reusable, like not our chest, but the water dipping
+
+@Dhruvin [33:28]: Mhm
+
+@Taha.U [33:42]: Test for geranium, blah blah blah this time. Are these reusable and if not reusable, what makes it different from somebody just buying a $200 test and dipping it in checking the results, and you're saying something is or something isn't, historically this,
+
+@Dhruvin [34:01]: So listen, so first of all, that $200 test is a wet lab test, so like you go to a lab, the lab uses this specialized equipment, and that is the cost that the lab.
+
+@Taha.U [34:03]: Yeah.
+
+@Dhruvin [34:13]: Incurs for doing the test on the specialized equipment they use spectrometers. They in spectroscopy to identify the exact concentrations of the chemicals, only substances or the compounds. The what we are doing is we are using synthetic biology, where we, we have special proteins which are like on the people. So these proteins change their color based on the exact concentration of the arsenic. So for example,
+
+@Taha.U [34:33]: Mhm. Mhm.
+
+@Dhruvin [34:42]: If the concentration is like between 0 to 10 mcg per liter. The color is going to be green if the concentration is between 10 to 15 mcg, the color is going to be orange, so that we are, so we can use a simple smartphone camera to actually identify what is the exact concentration. Now.
+
+@Dhruvin [35:00]: Now you may think that why do all of this we if we can use the paper test but not use paper test for all the chemicals because people test chemicals like the paper dip test does not work on the majority of the.
+
+@Taha.U [35:00]: Mhm Mhm Mhm.
+
+@Dhruvin [35:16]: Substances that we need to look for. It does not work on metals. It does not work onions. It only works on very, very few select.
+
+@Taha.U [35:25]: I
+
+@Dhruvin [35:25]: Compounds which are very compatible with organic chemistry, so that is the thing with the paper di test.
+
+@Taha.U [35:31]: Interesting Dude, I still don't, I still don't understand one thing. Why are we, so basically, in a nutshell, what our model literally does is we drive data and based on the data, we make a guess where this is based on some data. We haven't you noticed that data is like super, what is it called? Toxin duty. We don't have enough clipping data with the whole thing. And our second question, doesn't like radiation release like a magnet like seeing like a different magnetic field that interferes with the watch on Earth. So it's like, you know, this really kicks in all and out if you do point it, if you do point a high indeed
+
+@Taha.U [36:11]: What did you call it compuser?
+
+@Dhruvin [36:16]: No, wait, wait, can you repeat your first question? I did not get it.
+
+@Taha.U [36:21]: Dude, I still don't think like I do get the entire, I don't get it but still I do get it. Super complex, love it, but don't you think we should be limiting ourselves to one and the other side or maybe like a compas like by data said, I mean the data we're getting is super concentrated, and it's not a lot.
+
+@Taha.U [36:40]: We're just making predictions whether it's, oh, if it's hair or if it's there, they are different chemical properties and all that. Don't you think it would be better if he figures a different way out to solve this problem. Let's use this as a factor and compile the results with a different factor also inside of it, and then we can analysis, have an analysis and make it together, we get a better probability score.
+
+@Taha.U [37:04]: Like maybe one that.
+
+@Dhruvin [37:05]: No, no What do you mean by concentrated in one place.
+
+@Taha.U [37:11]: Concentration on one place. The starter is not allowed. Just like you said, India does not have its republic.
+
+@Dhruvin [37:18]: Yeah.
+
+@Taha.U [37:21]: So why will, because not everyone wants to know I tell everyone that, oh, well, we have uranium in our waters. That's gonna just screw up most of their relations with different countries or with their own people.
+
+@Dhruvin [37:21]: Perfect You No, because countries do want to test for what do you say?
+
+@Dhruvin [37:42]: All the instructions
+
+@Taha.U [37:43]: They don't wanna tell their people, but they don't want to tell the public about it.
+
+@Dhruvin [37:46]: All these You've got this conspiracy theory from, bro.
+
+@Taha.U [37:51]: No, like, have a look at it like you just said, India doesn't give out their data for data publicly. Where the hell are we gonna get that dag from? And why are we limiting ourselves to just these factories and countries are leasing. Why make an old test or something that's.
+
+@Dhruvin [38:02]: You find
+
+@Taha.U [38:05]: OK, continue, continue.
+
+@Dhruvin [38:08]: You can't get the data in India, but it's like only limited to research institutes and Like it is like not freely available like it is available with USDS. USDS has its API key with like super generous limits. India does not have to like that, for if you want the data you need to like run around the municipality operations which are in your neighborhood and ask them for the historical datasets and if they are if they want to, they will share it otherwise it is only reserved for like research institutes, government research institutes, and researchers who want to know, do research.
+
+@Taha.U [38:23]: Right
+
+@Taha.U [38:42]: What is? Yeah, I guess. OK, fine, I get that. What if like, I went out. I don't know if this is happening on this or not. Let's just take this as a factory because I can guarantee you this is happening somewhere. What if a country lies about this, geological report in this matter. What is the like? Then what? So what I'm gonna push it towards this. Why are we limiting ourselves to the data that these countries are giving us? Why not make a method of collecting our own data so we can use the other countries that as their a.
+
+@Dhruvin [39:08]: I mean like you are getting into. What if scenario like for now I think we have to take that what these government institutes and labs report at their face value. Like we cannot make assumptions that all right, India has this big, big thing where they have a lot of arsenic in their water, and they want to hide their incompetency that they cannot filter it out through the fake in the data sets. So I mean like we cannot go around and make assumptions. Obviously like we can do all of this collection by ourselves. We are doing this collection by
+
+@Taha.U [39:29]: OK I OK.
+
+@Dhruvin [39:41]: Ourselves, but the thing is we need to use the historical data, which is like collected over the past 80 years to make future predictions. So because we need
+
+@Taha.U [39:49]: OK Mhm.
+
+@Dhruvin [39:52]: More data to make our models more accurate, all right, but once we have the historical data set, we do not need these government labs. We can do all of the things by yourself. We like we need 46 parameters, 41 are by remote sensing, no reliance on the government, and the rest 5, we are doing a paper simple paper dip test. So government
+
+@Taha.U [39:59]: Mhm. Mhm Mhm. Mhm
+
+@Dhruvin [40:13]: Labs are not involved once we have the dataset, historical data set, we only need the historical data set and we need to take it at the face value.
+
+@Taha.U [40:23]: OK, OK, so I think I bring the the wrong, the wrong way. What if there was an error made by the government, while collecting this dataset, then what, then what do we do? Why are we still taking this at face value because this is not going to give us a solution that we want and government contractors especially from my understanding of talking to government contractors in Pakistan put a similar solution. I had a child with one like
+
+@Taha.U [40:46]: A year and a half ago. They were interested in linking this and using quantum like a quantum computer to Quantum mechanics. I think I don't exactly remember. But his issue with that was, right? They were doing a seminar thing but they hired like this desk where they're grabbing on Su data from one source that they were using and then feeding into their quantum computer, doing some quantum mechanics, blah blah blah jargon. I don't exactly remember, but we got to come up with
+
+@Taha.U [41:14]: What is it called? They're basically using it for the spy on you got, what is it called, other governments and the UK facilities because I'll be honest, I don't know if I could say this like garbage. Screw this, It doesn't matter. I've got a, I go to jail for this home shot and this is flipping matters. we're scared. Now what if India gets a nuclear power plant with it right? Yes, then what happens? And we don't know about it. We can't track it, then what? What if a different competitor for an enemy makes one near us, then what?
+
+@Taha.U [41:49]: You have to take it to these matters, and the government especially is not going to take action if you give them a faulty the other sources. So we need to give have at least a good, good enough episodes and for multiple other manners and other data sets, we can verify this.
+
+@Dhruvin [42:08]: You know, because.
+
+@Taha.U [42:08]: Because if you're just going on this local data. Go ahead, go ahead
+
+@Dhruvin [42:12]: Because if you take example of Bangladesh. The only single time Bangladesh conducted extensive water contamination test was in 1990s. In its whole history as a country, so I only time this was done was by British Geological Survey. So yeah, we only, we have very few limited options in terms of data sets, and we have to take them at face value and
+
+@Dhruvin [42:44]: See that they are 100% faithful. Yeah, there might be 10% or 5% chance of error, which is very, very normal in wet lab testing, and it is there in every single data set that you are going to find out on the Internet, it is super common if you're talking about biology, if you're talking about chemistry, physics, every experiment has some kind of error significance, and yeah, we can ignore that but what I'm saying is that there are not a lot of sources for historical
+
+@Dhruvin [43:14]: Data sets, like if you take the US for example, USGS is the only source reliable source where you can get data set for the historical water contamination rates. Moreover,
+
+@Taha.U [43:25]: Does USD SPGS or USDG whatever, get rid of the whole world or of just the United States.
+
+@Dhruvin [43:26]: Moreover They do, they do their water contamination tests in multiple countries, but it's there's like quite random, but and it is like not very consistent.
+
+@Dhruvin [43:45]: Timing, so like not every year, every 5 years, but for the US it's every single year, every like for multiple, multiple times a year actually in many many states. So yeah, USDS is pretty consistent in in the in the United States. Also, you were talking about what about a country lies about.
+
+@Dhruvin [44:06]: Something, you know, super, super watch.
+
+@Taha.U [44:08]: Let error happen on there and they were.
+
+@Dhruvin [44:10]: He
+
+@Taha.U [44:12]: Yeah, let's see if the, I wanna see the security or government contractors or they contracting or whatever. Let's take this as a source. I am, what is it called? I am Iran. No, I, let's yeah, let's say I'm on. I'm scared that Israel is gonna flipping like, like it's building a different examples. OK, I'm Israel. This is much more relevant. I don't know if it all has nuclear power plants. I've been seeing them, but that's something else.
+
+@Taha.U [44:43]: They have, the closer building a nuclear bomb. I want to find a way to find it, find it out without telling anyone that they, that we're actually looking for if they have a nuclear bomb. Or in UK power plant, nobody knows about. So, think of me in that case, I'm trying to figure out where they are.
+
+@Taha.U [45:05]: So how would we do that as a contractor's perspective. I want to see an application where we
+
+@Dhruvin [45:05]: But You cannot.
+
+@Taha.U [45:12]: Get through with it. I wanna use satellite or whatever matters or Doesn't matter how, but how a way where I can get above 80%, probability or an accuracy of 80% that there's a high probability that Iran has a
+
+@Taha.U [45:28]: Or whatever country has a nuclear power plant in this significant area? Oh, in that significant area.
+
+@Dhruvin [45:35]: But look, now the thing is that my model cannot get the exact nanograms of uranium or radiation that you're detecting because radiation is can be detected by Geiger Geiger-Muller counter or or what? I, I forgot the other other readers for radiation, but the most popular one is Gaiger Muller counter, and if you and if you talk about government agencies, they are super, super, super, super cautious and careful with their nuclear ex
+
+@Taha.U [45:50]: Yeah. OK
+
+@Dhruvin [46:05]: Pe ri ment s because obviously all most of the countries have spies in other countries, for example, India has spies in Pakistan, Pakistan has spies in India, so yeah, it it is pretty common. So what I'm saying is that they are so careful with how much like uranium is, like, how much radiation is leaking out of leaking out of out of this facilities. So it is nearly, nearly, nearly impossible to detect
+
+@Taha.U [46:15]: OK
+
+@Dhruvin [46:35]: Uranium, uranium concentration, which is Uranium or radiation concentration which is nanograms.
+
+@Taha.U [46:45]: Interesting. I want to see a cover of, yeah.
+
+@Dhruvin [46:45]: So with that model we cannot do uranium. Not in not nanograms of concentration.
+
+@Taha.U [46:50]: Which Riva you need Every single day, so. Sorry to cut you off and I mean thing is right, even if you get an 80% chance that we can do them. So we'll have another source of digging into investigations or figure something out, even if he gets a probability of 80%, the probability there's a high probability of 80% of this based on these factors, list of factors so we can flipping investigate. You don't have to commit the crime to be investigated for the crime, do you?
+
+@Dhruvin [47:22]: No, no, look.
+
+@Taha.U [47:23]: It's just suspicion, suspicious.
+
+@Dhruvin [47:25]: That is sensitivity of the, the, there is, there is this thing called how much can we measure of something? Like, yeah, we know the accuracy of the model which is like which which are like two of them, but we need to look also that how much of something can be measured. So uranium.
+
+@Dhruvin [47:43]: Can be measured only in grams like my model can't do uranium. It can do in like grams per liter, and no, and you know how much a gram is? A single how much a gram is like today's nuclear reactors, they probably use like I guess 1 kg a day.
+
+@Taha.U [47:57]: Yeah
+
+@Dhruvin [48:04]: So 1 g of uranium 235 in a water supply is a hell lot of uranium in our water. So no, I think no country is like leaking out so much uranium in their water supply. It is probably the the radiation is probably leaking out, which can be only measured by Geiger-Muller counter with because they because it can detect alpha and beta and gamma radiation. We cannot do through do this through chemistry. Also, my model can do like grams per liter, not nano
+
+@Dhruvin [48:34]: Gra m s of or even lowers.
+
+@Taha.U [48:36]: Hard Grams per liter could be one of the best things we could apply a garden.
+
+@Dhruvin [48:43]: No bro, not quite that it's nothing, it's nothing actually.
+
+@Taha.U [48:43]: So you've done, I die. Just Yeah, because my thing was right, if we use it as a military applicator or an investment bank source or whatever whatever without our funding right there. We can get funded very easy, and that's
+
+@Dhruvin [48:58]: But he got stuck on making a soft making your service like palentity where we can, you know, we can detect the nuclear activities of a country. We can give this data out to investment banks so that they can identify and, you know, make conclusions on a mining company. We can do this for logging. We can do this for illegal waste dumping. So like we can't take this data set somewhere elsewhere rather than sending it to
+
+@Dhruvin [49:28]: Government agencies for spying on other than.
+
+@Taha.U [49:31]: Government agencies, bro. well, my thing is, well, we can use all of the different uses. Flipping becomes financier. But if we use this as a good enough data source, we could actually make this a real company. My goal is in winning 00. My goal is at winning a real home shot. It's making this into a real life home shot. A company that we could do
+
+@Taha.U [49:53]: It's something you could figure out.
+
+@Dhruvin [49:54]: So with with with just the public aspect you can still turn this into a company. You can still turn this into a company with just the public health aspect. If you want to make more money, sell your data to investment banks and the quantitative firms, quantitative finance firms, like I do not think that you can turn this into like some kind of balanee sort of system Ballentine company used for, you know, identifying.
+
+@Taha.U [50:20]: The editors of who we, identifying people. I'm saying a security arms or a government contract or military government, whatever they're called, a contractor that has the sole purpose of finding out for what it's called, maybe the CIA, maybe something that that's find out if a different company if a different country, companies illegal when Iri is having waste, if they're having a secret nuclear power plant, and we don't know what the heck to do with. So we have to figure things
+
+@Taha.U [50:50]: Out like this.
+
+@Dhruvin [50:51]: And Don't you think that country will restrict us to do field testing if you are, you know, selling the data to other countries which may be, you know, which may be not beneficial for them. For example, for example, let's take Pakistan and India. Let's say that I am giving the Pakistan water contamination data to India, and let's say just for the sake of this example, let's say that there is like 10 g of uranium in the water, not possible, but let's just say an example
+
+@Taha.U [51:01]: Worse. 6 H
+
+@Taha.U [51:20]: Right OK
+
+@Dhruvin [51:23]: And I report this I I go and tell this to the Indian government, and like they gave me like $100 million for this. That's, let's give this an example. Do you think that Pakistan will let me continue my operations in the country. He no. Hennu, I mean, many countries put their national security above public health. So I do not think that if we take this into like a
+
+@Taha.U [51:38]: I that's why
+
+@Dhruvin [51:45]: If, if we try to make this into a spine system. Countries are going to let us operate in there. In their areas and regions.
+
+@Taha.U [51:54]: So that's why I'd recommend, right? We figure out a way to grab another piece of data or a different data source. That isn't on ground. We just needed, I can say to create suspicion. Suspicion is what matters. If we can hack suspicion, if we had like an 80% chance that there is, and it's flipping validated by an investigation that the that what's it called, the International Nuclear arms or nuclear whatever company or testing does, and they find it out. Do you know how big of a case study that is? Take an example of challenge here, bro. You know when itsama bin Laden was killed, there were what of God. There were chances that
+
+@Taha.U [52:31]: Osama bin Laden, right? Oh, was killed and found out and caught, via patent systems. You know how good it worked today? That's security of a national contract with the government of Israel that secured them a national contract with the with the flipping government of France.
+
+@Dhruvin [52:48]: But I do not think that you can turn this.
+
+@Taha.U [52:49]: Because I.
+
+@Dhruvin [52:52]: Water contamination prediction ML model into into a parenty like system. I think this may be a lot more forceful to do this. Like we are like forcefully trying to shut down this idea onto this project. I think that the very simple paradigm of like taking this into public health and quantitative finance is pretty good enough, pretty damn good enough, because first of all, first of all.
+
+@Taha.U [53:17]: Yeah, let me see I drive, drive, drive, go ahead.
+
+@Dhruvin [53:20]: Yeah, yeah, so, so like, look, you don't like first of all For the sake of the moonshot, we are already doing, I think the the project is already eligible and the problem statement is also good enough to qualify for the moon shot. Then for to turn this into actual company, you, you can still do that. You can still, you know, take government contracts if a project is good enough, if your project is good enough for accuracy, if it saves my governments a lot of money, also you're doing this for public good. I do not think that turning this into a spying software like going to do us any good like it may be a lot more forceful to do this. Like if you're trying to find out some other data so that we can use to find out about uran
+
+@Dhruvin [54:03]: Ium contamination. I mean, like there are many better ways to do this than using water because water in nuclear facilities like not released out in public. They have like tools which are Way, way, way underground in these concrete buildings. Have you seen like on YouTube, like I think they have like multiple tools of nuclear facilities like nuclear power plants. Do you know how they store they used up nuclear uranium 235, they store it in
+
+@Taha.U [54:31]: Well
+
+@Dhruvin [54:32]: Big, big water pools
+
+@Taha.U [54:33]: Underground.
+
+@Dhruvin [54:35]: And the water pools are going to stay there for like hundreds of cents like for multiple centuries, multiple centuries, the the the pellets are not going to be taken out from there. The water is not going to be released into public because our water is radioactive, but it is quite safe radiation like you could swim in it and still be alive without any kind of cancer, but it will still not be released into the public. So what I'm saying is that nuclear facilities do not release the water nuclear
+
+@Dhruvin [55:05]: Water waste into the public. there are just multiple different ways to detect nuclear activities of a country, and I do not think this is one of those better weeks.
+
+@Taha.U [55:19]: Yeah, I say right, let's not limit this to a software application that, I mean, go like this application at the moment when my whole issue with this, right, is we need a source of data that we can collect ourselves instead of physically going to these countries or something. Why not they have a different type of satellite or something that detects the
+
+@Taha.U [55:41]: Detects some issue with this So that's our main goal with this flipping over shot that we do
+
+@Dhruvin [55:47]: I've already looked into that. The problem is that we.
+
+@Taha.U [55:49]: Have.
+
+@Dhruvin [55:52]: The satellite data does not breach very far into the ground. It is like stop. 6 or 7 centimeters of the Earth's crust. What we need to, we need, water samples data from like below 150 or 200 ft into the earth.
+
+@Dhruvin [56:09]: Big difference between 6 centimeters and 1150 ft. So another thing there is that many of, like, for example, magnetics, you can detect magnetic materials from airplanes or from satellites. You can do that, but they are not
+
+@Dhruvin [56:27]: The most important thing, For detection of like in in those 46 parameters, the most important thing in the 46 parameters are the geology, the topology of our area. Secondly, 5 chemicals, 5 substances which can only and only be measured from
+
+@Dhruvin [56:46]: On-site testing, we cannot remote sense them, or like we can set up sensors, but the problem with sensors is that they go bad very soon. Well, what if there's an earthquake this and we need to, we, there is a lot of capital which is required in setting up sensors and, and also.
+
+@Dhruvin [57:06]: Many cases are like not very easy to go and like do all of this electrical work. Also then sensors have their own error rates. They are false quality, false negatives. They more many times they go bad, so it is like much, much worse to use sensors, remote sensing simply won't work, so we need a way that is cheap and we can protect on site water samples. So I think people dip testing is the best.
+
+@Taha.U [57:12]: OK.
+
+@Dhruvin [57:35]: Correctly for those fights.
+
+@Taha.U [57:35]: Yeah. That's No did you hit me that I'm not sure.
+
+@Dhruvin [57:46]: Yeah, I can hear you.
+
+@Taha.U [57:48]: OK. Yeah, still, well if I major issues, but this is, why are we specifically limiting this to water down the sources? Can we like figure out a different way. That's a point of my so we can look at technology or using an existing grow up to it.
+
+@Dhruvin [58:01]: What do I see? Can, can you repeat like what are we?
+
+@Taha.U [58:06]: Don't you hear me My thing is, right, with the moonshotk, why limit yourself to an existing solution. Why not making new one. I have build off of an existing solution and make it better. Like I get that this is validated, and building this would take like the least amount of what is it called least amount of effort compared to building a whole new old shop, but that's the point. Why not build up? And if
+
+@Dhruvin [58:28]: I mean, our education is that we are able to do this, do water testing for super super cheap ML models. the way, why do we need to reinvent the wheel when it's already being made, like when it is already exists, why do we need to reinvent the wheels like paper dip testing has existed for like a few years now. It is quite reliable or the only thing we would need to do is we need, we, we would need to find a vendor for us that would mass produce
+
+@Dhruvin [58:58]: We, I'm sure that we can find someone in China or something, but what I'm saying is that the people dip testing like the part you are saying that why do we need to do on site testing for those 5 substances is because there is no other way, using remote sensing, so we need a way that is cheap, which is lightweight to carry with does not require any kind of technical expertise, so like any unskilled neighbor can also do it.
+
+@Dhruvin [59:24]: So what, if you, if you make some kind of technique or electrical system, you know, which needs to be calibrated, it needs to be operated. You need skilled enable you would need to train people on how to use this systems, so I think
+
+@Taha.U [59:26]: So
+
+@Dhruvin [59:37]: The most, most easy way, the most, easy way to use paper dip test you know, dip a piece of paper into water. 30 seconds you get color change. Not I, so for example, if you are with the dip testing, you do not need to know anything. You, you are given instructions, dip this water, dip this piece of paper in water, wait 30 seconds, and snap a picture. That is it.
+
+@Taha.U [59:49]: In
+
+@Dhruvin [1:00:03]: No technical training required for you. We can get Lieber for so much sheep. That is the reason that they call the cost is like $1.50. If we need, if you would. Hire skilled labors in countries like Switzerland, it is because, the cost is like super expensive for labor.
+
+@Dhruvin [1:00:22]: And this also expensive in India. So, yeah, that, the reason that this whole thing is cheap because we do not need skilled labor. The only thing that you need to do is Nap a picture of a paper.
+
+@Dhruvin [1:00:38]: Obviously now now you could try to bring innovation into this.
+
+@Taha.U [1:00:39]: OK
+
+@Dhruvin [1:00:43]: But we do not have the time for that. We do not have the luxury of time. We only have a week left. You need to do, you need to make the deliverables, we need to, we need to Also do the validation, economic and feasibility validation for this whole project and you will need to talk to a lot of people. Obviously like in the in the long term you can try to do something you can you can try to do research and development into remote sensing those high substances. Obviously you can.
+
+@Dhruvin [1:01:11]: Do that. That, but Right now we do not have the luxury of time I think for the sake of moonshot, our project is good enough, we only need to talk to Ali So to ask her to which direction to take this moonshot into.
+
+@Taha.U [1:01:27]: Yeah I'm confused about the funding. I get about making this a profitable company. I'm confused about execution with that, but we should could decide to tell with the Alio. What's that
+
+@Dhruvin [1:01:39]: You are confused by, like how are we going to turn this into a profitable company and, and what?
+
+@Taha.U [1:01:48]: Get funded in the first place because I don't think the startup, like I do know it's cheap in the long term, but right now there will be some gods that remains that are just not clear to us right now. The second question, are you willing to make this an action initiative that you started your life. Just to answer that one question honestly.
+
+@Dhruvin [1:02:06]: No, I do not want to start a company right now. I, I do not want any of I do not want to start any company. I'm not talking about this project. I do not want to start any company right now in high school.
+
+@Taha.U [1:02:19]: That's not the point. That's not the point. I'm just asking. Would you want to make this into a company ever. I just have that as a thought.
+
+@Dhruvin [1:02:25]: No, it's not. I would, I would make this into something like for example, if you need if you need money, startup money, there are just so many government schemes in India, for example, government gives out 11 to 2 CR if your project is in the sustainable development goals if you're, if you're a startup.
+
+@Taha.U [1:02:27]: OK.
+
+@Dhruvin [1:02:45]: If you're founder under the age of 25, the government is going to give you anywhere between 1 to ₹2 crore. If you startups all problems. With, sustainable development goals from the UN. Also, there are just so many, so many, so many, so many.
+
+@Dhruvin [1:03:01]: Funds and grants that are there for For startups which solve such issues. So yeah, and about profitability, I said that you know we are like we we have a cost of $1.5 for water weight test and we are not going to encourage it for all the wells, we are only going to do this whatever what what a dip test in certain ways where we are suspicious that something else is going on.
+
+@Dhruvin [1:03:29]: And we are going to charge the NGOs, the government, and the banks, some kind of fee for accessing our data. That is it. In the
+
+@Taha.U [1:03:39]: OK, got it. That's go. I still have a bit of sus fish head, but it doesn't matter because my goal with this was actually the only certification a company who know what the future's asking? We might literally like can't feel it giving us like
+
+@Dhruvin [1:03:40]: Yeah
+
+@Taha.U [1:03:54]: 500k to in this house. Who knows? Maybe then you'd want to build it. It doesn't matter. We'll figure that out later, but as, let's get to we shot out of the way and then we be rech it to accomplished people. Who knows? It might be an actual company, it might not.
+
+@Dhruvin [1:04:04]: Yeah Yeah, yeah, exactly, like, first, let's get the moonshot out of the way.
+
+@Taha.U [1:04:10]: Because. Yes Because I'd love to start this as a company. It's such a good idea, but I am 100% certain we will fail. Not 100 80 to 90%, will fail so it's convenience same we good learning opportunities. And I did say that you work on, what did you call it, making the world
+
+@Taha.U [1:04:32]: Like you've tried to stop people dancing nuclear, cotton nuclear or whatever, uranium concentration of water in the high school and your college applications. Imagine.
+
+@Dhruvin [1:04:45]: Hm. So.
+
+@Taha.U [1:04:45]: I think, I think they had to Stanford or MIT because if you did this. Oh.
+
+@Dhruvin [1:04:53]: So, I think that I, I, I believe that I have cleared your doubts about the project. Like we can go and talk to any so so like which
+
+@Taha.U [1:05:01]: Bro How much for
+
+@Dhruvin [1:05:05]: Direction to take this Quality to.
+
+@Taha.U [1:05:09]: Thank you so much for dumbing down for me, especially because I'll, I'll be honest, I'm stupid I'm super dumb. I don't have a lot of the students, but for this time wear, I want to learn, I wanna do this and maybe I want to make friends in new context because I'm quite sure I could go have a lot of in the work.
+
+@Taha.U [1:05:27]: For my school has a couple of, I have few in Boston a few outside, but I want to expand this network. So that's one thing I love about the show.
+
+@Dhruvin [1:05:36]: And you know that A levels paper got leaked in Pakistan.
+
+@Taha.U [1:05:37]: You know Yeah, bro, it's the IGCSC was also got leaked. Like today was the whole fossa.
+
+@Dhruvin [1:05:46]: Yeah, that is my. I'm saying you do not, do not take A levels, do not switch from IB. Just stick with IB because, you know, who knows that your paper got leaked and the exam fee you paid for, you know, is like gone down the hill and now you have to retake the exam because E Emirates has
+
+@Dhruvin [1:06:04]: Has a suspicion that you cheated. It is like every time I think for the past 4 years I'm seeing that every time in May, June, a paper gets leaked in Pakistan.
+
+@Taha.U [1:06:16]: Oh yeah
+
+@Dhruvin [1:06:19]: Yeah, yeah, so like, stick with like.
+
+@Taha.U [1:06:20]: But again, Oh I'm probably not gonna do DC. I won't have time for extracurriculars and they need to focus on my literacy. Right after this because I won't have time in DP. Like, I have so many, I have so many clients. I'm not kidding you. You know how is my bestie. You know how much the most money I've waited in a week.
+
+@Dhruvin [1:06:40]: Wait, let me guess $1000
+
+@Taha.U [1:06:44]: 9800 for the week's work. One week's work to caution.
+
+@Dhruvin [1:06:47]: Oh my God
+
+@Taha.U [1:06:49]: And they paid that much. And you wonder how much that was profit.
+
+@Dhruvin [1:06:54]: I, let me guess, it is, I guess profit was $6000.
+
+@Taha.U [1:07:00]: $8000 bro. You know what, most of their even profits weren't. I literally begged the client to pay for my personal subscriptions of the softwares, and on top of that, he paid for his own infants.
+
+@Dhruvin [1:07:12]: 00, I mean, aren't people willing to pay so much?
+
+@Taha.U [1:07:17]: Yeah, bro, because of the profit you can get over time. If you replacing a employee who costs like 200 or $120,000 and they're making the proper like the children who is like get whatever fees you're charging, the company should be able to can accept return as a prophet and which is driving a 10% fee off of it.
+
+@Dhruvin [1:07:38]: Hm
+
+@Taha.U [1:07:40]: So if there's a task, the thing is going.
+
+@Dhruvin [1:07:41]: Oh
+
+@Taha.U [1:07:43]: Is doing, that takes an average of 10 hours a week. That's costing like 40 hours a month and that $200,000 in labors. We see press, remove that and charge it 3000. They will pay it. If you can selling Because they will buy anything that saves them time, and that's building up an offer. So that's one of my favorite things to do.
+
+@Taha.U [1:08:05]: That's why I have to, I'm I'm gonna be doing DP. I have to focus on my agency, get still need to pass a level, which is my friend right now is like 5K MMR. Do you know what 5G MMR is? 5000 monthly repairing gras.
+
+@Dhruvin [1:08:17]: No, I do not think that in part.
+
+@Taha.U [1:08:22]: He's at $5000 monthly rem fast elect from his agency now. He has automated host with.
+
+@Dhruvin [1:08:28]: I think He's like already in the point I think he's already in the 1% of like top 1% of the Pakistan's GDP.
+
+@Taha.U [1:08:37]: No, she's not is Pakistan. She's in the US. He lives in Miami. he's on a 5.
+
+@Dhruvin [1:08:40]: Whoa oh, all right.
+
+@Taha.U [1:08:43]: My agency with me. He quit his full-time job in army fun full into this because she's making enough money to sustain to stop me, and he has his investments and properties that are.
+
+@Dhruvin [1:08:50]: I
+
+@Taha.U [1:08:52]: Giving him money, so that's that
+
+@Dhruvin [1:08:56]: Hm. So I think that
+
+@Taha.U [1:08:56]: But again, There's a win, there's a long bro.
+
+@Dhruvin [1:08:59]: A Paper gets leaked, that is a big problem, I think. Or take another series, do not do May, June, like paper is leaked only in May, June. I do not see paper leaks in Feb, March, or October, November.
+
+@Taha.U [1:09:14]: The reason I'm doing it in me, right, is who knows, it doesn't get leaked and I messed up the papers. I can regive it in November anyway, so.
+
+@Dhruvin [1:09:23]: Yeah, that is another.
+
+@Taha.U [1:09:27]: So that's our bro. I lovely, I look, I had a lovely conversation with you, bro. Thank you for doing your downpilo.
+
+@Dhruvin [1:09:32]: Yeah, yeah
+
+@Taha.U [1:09:33]: I loved it, bro. I didn't see. I'm done with you, it's, I guess see you with Ali?
+
+@Dhruvin [1:09:34]: Yeah. Yeah, yeah Just be on time with Ali.
+
+@Taha.U [1:09:46]: Yeah, I got to see you. OK, bye, Kevin.
+
+@Dhruvin [1:09:48]: Yeah, bye.
+
+@Taha.U [1:09:53]: Ya Every day.@Taha.U [0:11]: How do you feel
+
+@Dhruvin [0:12]: This is like She, I do not, I cannot say that. Yeah, like she said that take the public health direction. But do mention that other ways that you can monetize your project. It is like by selling your data sets to quantitative finance firms and that that part.
+
+@Dhruvin [0:36]: And also I think that we should do outreach. We, we, we
+
+@Taha.U [0:40]: Yeah, bro, you, dude, we can, what we can do, right, is alongside binding it, we need to be done with the, what is it called? We need to start the product put on phase 4. So, this week, what we need to do is bend and execute the idea.
+
+@Taha.U [0:58]: We know the gap. We know everything. We know the technical issue.
+
+@Dhruvin [1:03]: Hm But the but the product is like built already. It is like A male model, so like what do you want me to do like more on it?
+
+@Taha.U [1:18]: Writing it.
+
+@Dhruvin [1:19]: Hello I, I cannot hear you Hello, hello
+
+@Taha.U [1:30]: Irove and d and drove in. Can you hear me?
+
+@Dhruvin [1:34]: Yeah, yeah, now I can hear you
+
+@Taha.U [1:36]: He said, what my main thing is, right, can you send me the ML module when you get satisfied. Do you know what sass is? Software as a service.
+
+@Dhruvin [1:44]: No, I do not think that we should do it, bro.
+
+@Taha.U [1:49]: Dude, I see we satisified this way instead of just working on it like generally. Anyone should be able to run these tests. Any NGO, any government, so we make that guide instead of like saying, oh, we'll set up this long ass thing with you. We have a good onboarding sequence. We have a good testing sequence. So just like he said, with a photo or with whatever we'd be able to do this.
+
+@Dhruvin [2:12]: No, for but for the moonshot. We are let's focus on the moonshot right now. I do not think that we should satisfy it and also satisfying it will be very, very expensive because the model itself is quite large and also we need the live data so my computer particularly takes like 2 hours.
+
+@Taha.U [2:15]: Yeah, for the insurances
+
+@Dhruvin [2:35]: To run the inference
+
+@Taha.U [2:35]: Yeah. You do what the inferences
+
+@Dhruvin [2:38]: So So I do not think that we should, I I do not think that we should like satisified, like just let's get get validation from industry experts, hydrologists, economists, and like create the deliverables. So I think that within this week we can do that.
+
+@Taha.U [2:56]: Did
+
+@Dhruvin [3:00]: Hello.
+
+@Taha.U [3:04]: Rege everything.
+
+@Dhruvin [3:07]: Yeah, yeah, now I can hear you
+
+@Taha.U [3:09]: I think it's probably this is we're gonna be, we need to build an actual product out of this instead of just doing it as an ML model to win the flipping moonshot. We need like a, we need AA and making this assa will be the easiest shit ever. Walk me through your inference, boss with your laptop. What is the size of the model? What is it running off of, and everything.
+
+@Taha.U [3:28]: Go, go, go, straight.
+
+@Dhruvin [3:29]: No, I do not want to actually go through the pain of sacifying it because we have more important things to do. For example, even if he's satisfied, let's say that we mailed, we build a website where you can run this model, test it. So how do you validate? Like for example, you are using this model. So how are you going to validate that this model is working correctly or not. You cannot do it unless you have the past data set.
+
+@Taha.U [3:52]: Be So we run this on pass dataset. Wait, wait, what data are you getting? Let's use the US for example. Have you trained the did you really?
+
+@Dhruvin [4:03]: No, no, it's You are the
+
+@Taha.U [4:06]: It could be that. Give me a second. Give me one second.
+
+@Dhruvin [4:07]: What I am saying is What I, what Yeah, yeah.
+
+@Taha.U [4:14]: Hopefully, my audio clears up. I just turn my fan off. Give me one second. OK, so driven, my biggest issue with, with that is, right? The ML model would need validation one way or the other. We are using experts for that because I don't think we have the time to run it on that or just like you said, we could run it around historic data. We feed it data in 2019 and then we have the data for, for example, we have data from 2020, 21, 22, 206, 24, 25. Do you think that we give, give an accuracy score, and we put it out for free for people to use. We're not going to draw this on your laptop. That's not necessary. You know what, we can run this on. walk me through your inference costs, like, rundown.
+
+@Taha.U [4:57]: How big is the moderate, what are the other prerequisites?
+
+@Dhruvin [4:58]: Like But the thing is we have like so many other important things to do. If we, I know, if we are like so busy and making this into a sash product, then we would miss out on those other deliverables, for example, the manifesto video, video takes a lot, a lot of time. I have made videos before and I'm assure you a 5 minute video will take hours to make if you want to make a good read.
+
+@Taha.U [5:26]: Exactly. No, it, it'll take like a day or more, but that's besides the point. So that's why I say we need like a, we do, we're having a SAS video, aren't we? And Shasifying this, we can easily vibe for this. Who's saying we're gonna code this? Walk. Are we going to run the model somewhere, or is it just that we're saying we have a model?
+
+@Dhruvin [5:36]: No We are saying we have a model like we can show them the results of our inferences.
+
+@Taha.U [5:47]: We Well, what
+
+@Dhruvin [5:51]: Yeah, we say have a model. I say that we say that we have a model. I do not recommend that we convert this into SAS because listen, honestly, I have my exams at 8th May, so like a week from now, I think it's on the exact same day as the
+
+@Dhruvin [6:10]: And the moonshot.
+
+@Taha.U [6:10]: Yeah. On a different moonshot
+
+@Dhruvin [6:13]: So I will be busy on that. We have men, we have, I think 4 deliverables, Moonshot, I mean the video, the web page, the the one pager and another thing I do not remember exactly. that is left, oh
+
+@Taha.U [6:26]: We need to give them a demo and a
+
+@Dhruvin [6:28]: I. Slide deck is It is going to take a lot of time if we are going to create a good slide deck. We also need to do the validation so I.
+
+@Taha.U [6:38]: No, we need to fight, whoa, whoa, whoa, whoa, wait, pause, pause, pause, pause, pause. let me just walk you through to this before instead of moving on and on and on, let's clear this up. We need a 5 minute presentation. We do not need a deck. We need a project website that hasn't about us. This requires us to satisify this, like make this a small stash, and we do need to have a demo. We, it's not important for us to run it or whatever. I'd prefer satifying this because it's super easy. We can get like satify this in less than a day.
+
+@Dhruvin [6:55]: No
+
+@Taha.U [7:06]: I could if you'd want
+
+@Dhruvin [7:06]: Card number. I do not want to actually satisfy it, honestly, I will, I do not want to satisfy it. I think we have a lot more shit to do. I do not have the time for that, like we have the presentation deck, we cannot whip it in one single night, we will need like at least 3 to 4 days to create a good presentation deck which is like 7 or 8 pages long. what why I'm saying is this because we need the renovation too.
+
+@Taha.U [7:14]: Why?
+
+@Taha.U [7:32]: It's sort of OK
+
+@Dhruvin [7:35]: We need the validation.
+
+@Taha.U [7:35]: No, we need a presentation, not a presentation deck. We're not going to be sending them over a deck. For that we have the manifesto, pager and project website.
+
+@Dhruvin [7:44]: Yeah, so we have other things too.
+
+@Taha.U [7:45]: We just need, we need a presentation, dude, take a deepra needed 5 minute representation.
+
+@Dhruvin [7:49]: No, no, I do not Wait, so if, if we are able to do all of this, then we can satisify it. But we do not have
+
+@Taha.U [7:58]: I'm saying we start OK, I'm seeing we have like a landing page for whatever with our demo onto it and for people to mess around. I do not mean I didn't by satisfying it. I do not mean adding a paywall, I connecting banking and whatnot, and making this for people to use.
+
+@Dhruvin [8:12]: No, no, no, no. Yeah, yeah, yeah, yeah. I understood what you were saying, but For the sake of Presentation for the sake of the moonshot demo.
+
+@Taha.U [8:19]: Listen
+
+@Dhruvin [8:21]: You can, you can You know Like use Gemini. As like as a shell as a fake model. Or you or you do, are you understanding what I'm saying is that I enter this coordinate, or right, and it says that there is a board here. Do you want to, do you want to run the contamination prediction test, whatever that is, then Gemini like whips up some like educated guesses. Why am I saying this? Because it is a pain in the ass to satisfy this.
+
+@Dhruvin [8:55]: I do not want to do this actually.
+
+@Taha.U [8:57]: Let's just work on a, let's let's screw Sasify this. Let's make this a landing page within about me, a demo and just things here and there about the founders. That's because our website is the one thing people care about. when we bring it on. I will be putting this on social media and using this as a case study for like
+
+@Taha.U [9:15]: A college in UNIAs. So keep it, keep that. I'll work on the website and satisfying it. Do you have the model built? Just honestly answer that
+
+@Dhruvin [9:22]: No No, I do not have it. I will have to drain it again.
+
+@Taha.U [9:27]: No, do you have anything? What do you mean print it again? Do you have something from before?
+
+@Dhruvin [9:31]: I, I have the raw data sets. Do you want me to share the, Google Drive file for it?
+
+@Taha.U [9:39]: Sure.
+
+@Dhruvin [9:41]: What?
+
+@Taha.U [9:41]: Oh my God, Cheney for.
+
+@Dhruvin [9:44]: You can train it on collab. It is like going to take you 2 days or so. But the thing is, OK.
+
+@Taha.U [9:48]: You know No, I'm gonna, I'm not even a collab. I'm not even a collab. I'm gonna, I'm renting a TPU to do this.
+
+@Dhruvin [9:57]: No, no, no, you cannot do it because the thing is you would need collapse pro to do it because
+
+@Taha.U [10:02]: I have it.
+
+@Dhruvin [10:03]: The Google iFile is, I think, 110 gigabytes.
+
+@Taha.U [10:06]: Have it I have it
+
+@Dhruvin [10:08]: Oh, then it's good. Then, then I can share you the source code and the drives. I mean the datasets, but honestly I think that this is not worth it. This is not worth the effort. Are you understanding the pain of using collab. The pain of training the model, it that shit is not worth it.
+
+@Taha.U [10:14]: I have to go wait wait wait Pause, pause, pause Yeah I'll be honest I'll be honest, dude. I'm gonna give this to Opus and tell him to train this. I don't have the time. I have my exams. I just want to think that we can give us a demo and make that work. dude, could you send me a text? I really have to go.
+
+@Dhruvin [10:42]: Vortex
+
+@Taha.U [10:44]: Can you just send me like the, the, what is it called? Send me whatever data you have on the model, and that research paper does not cover like the everything about the model also, or is that just your research on it?
+
+@Dhruvin [10:54]: Yeah, I have like a few, if you, if you give the research paper to whatever AI agent you have, then the AI agent will be able to recreate the the the the the the model, the model, yeah.
+
+@Taha.U [11:07]: Sure, but I'm gonna give it to my agent. He's going to run on an Oracle server. Did I tell you I bought an Oracle server, like I'm using an Oracle server. It's 512 gigabytes of RAM and an 80-core CP RM CPU. So I can train it, bro.
+
+@Dhruvin [11:23]: Easy bro. So yeah, yeah, yeah, yeah, you can definitely do it on that. Like it would be pretty quick, I guess, but
+
+@Taha.U [11:28]: I'll take like maybe 2 minutes, bro.
+
+@Dhruvin [11:30]: I feel like this is not worth the effort or the money that you'll be putting right now for this moonshot. I would say let's create a landing page about us via that text and shit, and then we'd add a video of like the typing and typing it in the terminal.
+
+@Dhruvin [11:46]: But I think that's.
+
+@Taha.U [11:47]: No, I manifesto video. Do you know what a manifesto video is?
+
+@Dhruvin [11:50]: No, no No actually.
+
+@Taha.U [11:52]: A manifesto video is what we're planning for the future and with this app. What we're manifesting for the future.
+
+@Dhruvin [11:57]: Oh, so like We are talking, we are talking and shit. So.
+
+@Taha.U [12:00]: Yeah, it's not a product demo.
+
+@Dhruvin [12:03]: I'm saying to put the product demo on the website if you really want to, if you really want to do it.
+
+@Taha.U [12:07]: Landing page yeah I will. I like vibe load something up.
+
+@Dhruvin [12:12]: Otherwise that that is not worth it.
+
+@Taha.U [12:15]: And the model, right, I'll hopefully I'll try, but I'll give it to my agent. Forget about it and tell it to train it. because I do not have the time and I use my free inference, whatever I get with Oracle. Dude, I love Ellison. I called him Poppy Ellison now. He gives this dude, I'm getting this server for free, you know. This is for free.
+
+@Dhruvin [12:21]: No. That that How
+
+@Taha.U [12:33]: They have like they have this free deal, right? on Oracle servers and I got it for completely free. So I'm like, yo, it is what it is. Dude, I really have to go. I have to take a huge shirt. I'll text you later.
+
+@Dhruvin [12:33]: Oh Yeah, but what, wait, wait, wait, does, just a minute, give me a minute. What I'm saying is that do not waste your server space on this. Do not waste your server credits on this. This is not worth it. What I'm saying is that if you really, really want a product demo, we can fake that shit up, because nobody can actually see what is happening in the back end in the product demo, but
+
+@Dhruvin [13:03]: What I'm saying is that let's do our treat, create the web page, and all of that in this week and do not let's not train the ML model now again. I, I'm saying this because I have experience in how much pain it gave me on training the and like postprocessing the dataset. Oh God, it was a hell, it was a hell, it was so, so annoying because I was like constantly running out of RAM on my Google collapse, so I'll switch to my PC and like I was running
+
+@Dhruvin [13:35]: It like on simultaneous like half was on my teeth or half was on Kaggle half was on collab and half was on half was on my laptop. So what I think is that
+
+@Taha.U [13:42]: God, that's crazy.
+
+@Dhruvin [13:44]: Classified if you really want to do it, then we can like fake some shit up with Gemini. Let's focus on the deliverables and like make high quality deliverables instead, and I get some like 2 to 3 people to validate our project. I think that would be neat.
+
+@Taha.U [13:56]: OK Got it, bro Are you good with making the website or should I?
+
+@Dhruvin [14:05]: No, no, you, I mean, Gemini, have you used Gemini AppBuilder? It's genuinely so good right now because we have them, yeah, yeah, yeah, it, it can do like full stack website. So like we can use Gemini A builder. I can get the website up.
+
+@Taha.U [14:10]: I know, right Yeah, OK
+
+@Dhruvin [14:20]: Let's see about, yeah, bye, bye, bye. We'll talk later.
+
+@Taha.U [14:20]: Got it bro OK, bye dude. I really got to go. See you later, bro. Love this conversation.
+
+@Dhruvin [14:25]: Bye. Bye bye
+
+@Taha.U [14:27]: See you soon Hopefully, bye.
+
+@Dhruvin [14:29]: Bye.
